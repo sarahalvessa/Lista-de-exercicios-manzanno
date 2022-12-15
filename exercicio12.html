@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 12 | Laço de repetição While</title>
+</head>
+
+<body>
+    <!-- Elaborar  um  programa  que  efetue  a  leitura  de  valores  positivos  inteiros  até  que  um  valor  negativo seja  informado.  Ao  final  devem  ser  apresentados  o  maior  e  o  menor  valores  informados  pelo usuário.  -->
+    <div class="text"></div>
+    <div class="texttwo"></div>
+    <script>
+        let numero = 0;
+        let auxiliarone = 0;
+        let auxiliartwo = 0;
+        let pegarid = document.querySelector(".text");
+        let pegaridtwo = document.querySelector(".texttwo");
+
+        while (numero >= 0) {
+            numero = parseFloat(prompt("Digite um valor positivo ou negativo"));
+            auxiliarone = numero;
+
+            if (numero >= 0) {
+                pegarid.innerHTML = ("O maior número digitado é: " + auxiliarone);
+            } else {
+                auxiliartwo = numero;
+                pegaridtwo.innerHTML = (" e o menor número digitado é " + auxiliartwo);
+            };
+            numero++;
+        };
+    </script>
+</body>
+
+</html>

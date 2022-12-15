@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06 | Laço de repetição While</title>
+</head>
+
+<body>
+    <div class="text"></div>
+    <!-- Elaborar  um  programa  que  apresente  como  resultado  o  valor  de  uma  potência  de  uma  base qualquer elevada a um expoente qualquer, ou seja, de BE, em que B é o valor da base e E o valor do expoente.  -->
+    <script>
+        let contadora = 0;
+        let base = prompt("Digite o valor da base");
+        base = parseInt(base);
+
+        let expoente = prompt("Digite o valor do expoente");
+        expoente = parseInt(expoente);
+
+        while(contadora <= 15){
+            document.write(Math.pow(base, contadora)+"</br>");
+            contadora++;
+        };
+    </script>
+</body>
+</html>
